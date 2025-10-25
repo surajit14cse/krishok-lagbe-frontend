@@ -47,7 +47,6 @@ function Header() {
           <Link to="/" className="text-gray-600 hover:text-green-600">Home</Link>
           <Link to="/about" className="text-gray-600 hover:text-green-600">About</Link>
           <Link to="/contact" className="text-gray-600 hover:text-green-600">Contact</Link>
-          <Link to="/faq" className="text-gray-600 hover:text-green-600">FAQ</Link>
             <Link to="/register" className="bg-white border border-green-600 text-green-600 px-4 py-2 rounded-full hover:bg-green-50 transition duration-300">
               Register
             </Link>

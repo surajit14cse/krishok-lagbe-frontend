@@ -18,6 +18,7 @@ import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import FAQPage from './components/FAQPage';
 import './App.css';
+import Services from './components/Services';
 
 
 
@@ -63,6 +64,7 @@ function Home() {
     <>
       <Banner />
       <Hero />
+      <Services />
       <FilterSection onFilter={handleFilter} />
       <WorkerCardsSection workers={filteredWorkers} />
       <TestimonialSection />

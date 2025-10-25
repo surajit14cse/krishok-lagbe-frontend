@@ -1,76 +1,30 @@
-Background & Container
+Design a modern and colorful “Our Services” section for a farming and agriculture labor website called Krishok Lagbe.
+Use a green and yellow color palette inspired by nature and agriculture.
+The section should have a clean, responsive layout with service cards showing different types of labor.
 
-Background color: #f9fafb (light gray).
+Include the following service cards with icons or illustrations:
 
-Section should be centered with generous white space.
+Harvest Labour – Skilled workers for crop harvesting.
 
-Two-column grid on desktop (form on left, office info on right), stacked on mobile.
+Plantation Labour – Helpers for planting and seedling setup.
 
-Left Side — Contact Form
+Irrigation Team – Labour for water management and equipment setup.
 
-Card style: white background, rounded corners (border-radius: 12px), soft shadow.
+Transport & Loading – Helpers for goods loading and unloading.
 
-Title: “Contact us” (bold).
+Land Preparation – Tractor drivers and land tilling support.
 
-Subtitle: “Have questions? Reach our support team.” (smaller, light gray).
+Maintenance Support – Ongoing crop care and maintenance workers.
 
-Fields:
+Each card should include:
 
-Name input (placeholder: "Your name")
+A relevant agriculture or labor icon (like 🌾🚜👨‍🌾💧)
 
-Email/Phone input (placeholder: "Email or phone")
+A short description under each title
 
-Message textarea (placeholder: "Message")
+Rounded corners, soft shadows, and hover effects
 
-Button:
+Optional background gradient from #22c55e (green) to #facc15 (yellow)
 
-Full width, rounded corners, bold text.
-
-Gradient background (#4f46e5 to #6d28d9) or solid blue (#4f46e5).
-
-Text: “Send message” (white color).
-
-Right Side — Office Info Card
-
-White card, rounded with shadow.
-
-Title: “Office”.
-
-Details below:
-
-“Dhaka, Bangladesh”
-
-“support@trucklagbe.com
-”
-
-“+880 1X-XXXX-XXXX”.
-
-Use a simple text layout with minimal icons or none.
-
-Footer Line
-
-Below cards, center a thin gray text line:
-
-“© 2025 TruckLagbe — Terms · Privacy”
-
-Font size: small (12–14px), color: #6b7280.
-
-🎨 Design Style
-
-Font: “Inter”, “Poppins” or “Noto Sans Bengali”.
-
-Colors:
-
-Background: #f9fafb
-
-Card: #ffffff
-
-Text gray: #6b7280
-
-Button: #4f46e5
-
-Padding: 60px 20px.
-
-Shadow: 0 2px 8px rgba(0, 0, 0, 0.05).
-
-Responsive grid (1 → 2 columns).
+Add a bold headline like “Our Services” at the top and a short subtitle:
+“Connecting you with the right farm labour for every need.”

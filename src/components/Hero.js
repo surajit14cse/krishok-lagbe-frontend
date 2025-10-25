@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -11,9 +10,9 @@ function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
         <h1 className="text-5xl font-bold">Find the Best Agricultural Workers</h1>
         <p className="mt-4 text-xl">Your one-stop solution for hiring skilled and reliable farm labor.</p>
-        <Link to="/register" className="mt-8 bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">
-          Get Started
-        </Link>
+        <a href="#services" className="mt-8 bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">
+          Find Worker
+        </a>
       </div>
     </div>
   );

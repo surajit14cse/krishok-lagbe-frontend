@@ -22,6 +22,9 @@ function WorkerCardsSection({ workers }) {
               <h3 className="text-xl font-bold mb-4">Categories</h3>
               <ul>
                 <li className="mb-2">
+                  <Link to="/category/farmer" className="block bg-green-500 text-white px-4 py-2 rounded-md text-center hover:bg-green-600 transition duration-300">Farmer</Link>
+                </li>
+                <li className="mb-2">
                   <Link to="/category/farm-labor" className="block bg-green-500 text-white px-4 py-2 rounded-md text-center hover:bg-green-600 transition duration-300">Farm Labor</Link>
                 </li>
                 <li className="mb-2">
