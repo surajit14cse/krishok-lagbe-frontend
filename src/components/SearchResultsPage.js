@@ -1,12 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import WorkerCard from './WorkerCard';
-
-const allWorkers = [
-  { id: 1, name: 'Dinesh Sarker', occupation: 'Farm Labor', location: 'Dhaka', rating: 4.5, image: '/FarmerImage/f1.png' },
-  { id: 2, name: 'Jane Smith', occupation: 'Farm Labor', location: 'Chittagong', rating: 4.8, image: 'https://randomuser.me/api/portraits/women/2.jpg' },
-  { id: 3, name: 'Karim Ahmed', occupation: 'Seasonal Worker', location: 'Sylhet', rating: 4.2, image: 'https://randomuser.me/api/portraits/men/3.jpg' },
-];
+import { allWorkers } from '../App';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);

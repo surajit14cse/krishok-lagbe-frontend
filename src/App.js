@@ -23,7 +23,7 @@ import Services from './components/Services';
 
 
 export const allWorkers = [
-  { id: 1, name: 'Dinesh Sarker', occupation: 'Mason', location: 'Dhaka', district: 'Dhaka', upazila: 'Savar', rating: 4.5, image: '/FarmerImage/f1.png' },
+  { id: 1, name: 'Bibhuti Biswas', occupation: 'Farmer', location: 'Khulna', district: 'Khulna', upazila: 'Terokhada', rating: 4.6, image: '/FarmerImage/f6.png' },
   { id: 2, name: 'Jane Smith', occupation: 'Helper', location: 'Chittagong', district: 'Chittagong', upazila: 'Hathazari', rating: 4.8, image: '/FarmerImage/f2.png' },
   { id: 3, name: 'Peter Jones', occupation: 'Farmer', location: 'Rajshahi', district: 'Rajshahi', upazila: 'Rajshahi Sadar', rating: 4.2, image: '/FarmerImage/f3.png' },
   { id: 4, name: 'Jane Smith', occupation: 'Helper', location: 'Chittagong', district: 'Chittagong', upazila: 'Fatikchhari', rating: 4.1, image: '/FarmerImage/f4.png' },
@@ -31,6 +31,8 @@ export const allWorkers = [
   { id: 6, name: 'Rahim Ali', occupation: 'Planting', location: 'Sylhet', district: 'Sylhet', upazila: 'Sylhet Sadar', rating: 4.7, image: '/FarmerImage/f1.png' },
   { id: 7, name: 'Karim Uddin', occupation: 'Planting', location: 'Khulna', district: 'Khulna', upazila: 'Dumuria', rating: 4.9, image: '/FarmerImage/f2.png' },
   { id: 8, name: 'Fatima Begum', occupation: 'Planting', location: 'Gazipur', district: 'Gazipur', upazila: 'Sreepur', rating: 4.8, image: '/FarmerImage/f3.png' },
+  { id: 9, name: 'Dinesh Sarker', occupation: 'Mason', location: 'Dhaka', district: 'Dhaka', upazila: 'Savar', rating: 4.5, image: '/FarmerImage/f1.png' },
+  { id: 10, name: 'Goutam Mollick ', occupation: 'Farmer', location: 'Khulna', district: 'Khulna', upazila: 'Terokhada', rating: 4.3, image: '/FarmerImage/f7.png' },
 ];
 
 function Home() {
