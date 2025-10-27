@@ -12,7 +12,7 @@ const testimonials = [
     id: 2,
     name: 'Bibu Kaka',
     location: 'Chittagong',
-    quote: 'The platform is very easy to use, and the quality of workers is excellent. I will definitely use it again for the next harvest season.',
+    quote: 'প্ল্যাটফর্মটি ব্যবহার করা খুবই সহজ, এবং কর্মীদের মানও চমৎকার। আমি অবশ্যই পরবর্তী ফসল কাটার মৌসুমে এটি আবার ব্যবহার করব।',
     image: 'https://randomuser.me/api/portraits/women/11.jpg',
   },
   {

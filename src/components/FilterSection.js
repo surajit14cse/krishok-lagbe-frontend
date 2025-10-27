@@ -58,10 +58,10 @@ function FilterSection({ onFilter }) {
               className="appearance-none w-full md:w-auto bg-white border border-gray-300 rounded-full px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-green-400"
             >
               <option>Any Rating</option>
-              <option>4 Stars & Up</option>
-              <option>3 Stars & Up</option>
-              <option>2 Stars & Up</option>
-              <option>1 Star & Up</option>
+              <option>4 Stars</option>
+              <option>3 Stars</option>
+              <option>2 Stars</option>
+              <option>1 Star</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
