@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { allWorkers } from '../App';
 
 function WorkerProfilePage() {
@@ -28,7 +28,9 @@ function WorkerProfilePage() {
             </div>
             <p className="mt-6 text-gray-600">{worker.description}</p>
             <div className="mt-8">
-              <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">Book Now</button>
+              <Link to={`/booking/${worker.id}`}>
+                <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">Book Now</button>
+              </Link>
             </div>
           </div>
         </div>

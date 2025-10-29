@@ -33,6 +33,9 @@ export const allWorkers = [
   { id: 8, name: 'Fatima Begum', occupation: 'Planting', location: 'Gazipur', district: 'Gazipur', upazila: 'Sreepur', rating: 4.8, image: '/FarmerImage/f3.png' },
   { id: 9, name: 'Dinesh Sarker', occupation: 'Mason', location: 'Dhaka', district: 'Dhaka', upazila: 'Savar', rating: 4.5, image: '/FarmerImage/f1.png' },
   { id: 10, name: 'Goutam Mollick ', occupation: 'Farmer', location: 'Khulna', district: 'Khulna', upazila: 'Terokhada', rating: 4.3, image: '/FarmerImage/f7.png' },
+  { id: 11, name: 'Tanmoy Roy ', occupation: 'Electrician', location: 'Khulna', district: 'Khulna', upazila: 'Terokhada', rating: 4.3, image: '/FarmerImage/f8.png' },
+  
+  
 ];
 
 function Home() {
@@ -87,7 +90,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/worker/:id" element={<WorkerProfilePage />} />
           <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/book" element={<BookingPage />} />
+          <Route path="/booking/:id" element={<BookingPage />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
           <Route path="/search" element={<SearchResultsPage />} />
           <Route path="/about" element={<AboutPage />} />

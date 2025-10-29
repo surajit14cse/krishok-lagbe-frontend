@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function AdminDashboard() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!localStorage.getItem('isLoggedIn')) {
+      navigate('/login');
+    }
+  }, [navigate]);
+
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    navigate('/login');
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <div className="container mx-auto bg-white rounded-lg shadow-md p-8">
@@ -21,6 +35,12 @@ function AdminDashboard() {
             <p className="text-yellow-700">Create and update promotional discounts.</p>
           </div>
         </div>
+        <button
+          onClick={handleLogout}
+          className="mt-8 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Logout
+        </button>
       </div>
     </div>
   );
