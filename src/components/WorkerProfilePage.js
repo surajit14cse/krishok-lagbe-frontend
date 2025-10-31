@@ -19,15 +19,15 @@ function WorkerProfilePage() {
           </div>
           <div className="p-8">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{worker.occupation}</div>
-            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{worker.name}</h1>
-            <p className="mt-4 max-w-2xl text-xl text-gray-500">{worker.location}</p>
-            <p className="mt-2 text-xl text-gray-500">{worker.phone}</p>
+            <h1 className="mt-2 text-2xl md:text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{worker.name}</h1>
+            <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-500">{worker.location}</p>
+            <p className="mt-2 text-lg md:text-xl text-gray-500">{worker.phone}</p>
             <div className="flex items-center mt-2">
               <span className="text-yellow-500">{'★'.repeat(Math.round(worker.rating))}</span>
               <span className="text-gray-600 ml-2">({worker.rating})</span>
             </div>
-            <p className="mt-2 text-xl text-gray-500">Price: {worker.price}</p>
-            <p className="mt-6 text-gray-600">{worker.description}</p>
+            <p className="mt-2 text-lg md:text-xl text-gray-500">Price: {worker.price}</p>
+            <p className="mt-6 text-base md:text-lg text-gray-600">{worker.description}</p>
             <div className="mt-8">
               <Link to={`/booking/${worker.id}`}>
                 <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">Book Now</button>

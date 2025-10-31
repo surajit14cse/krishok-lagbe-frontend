@@ -17,7 +17,7 @@ function SearchResultsPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Search Results for "{searchTerm}"</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-4">Search Results for "{searchTerm}"</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredWorkers.length > 0 ? (
           filteredWorkers.map(worker => (

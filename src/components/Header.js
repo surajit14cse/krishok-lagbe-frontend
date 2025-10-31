@@ -17,7 +17,7 @@ function Header() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Left Section: Logo and Tagline */}
         <div className="flex items-center space-x-4">
-          <Link to="/" className="text-3xl font-bold text-green-600">কৃষক লাগবে</Link>
+          <Link to="/" className="text-2xl md:text-3xl font-bold text-green-600">কৃষক লাগবে</Link>
           <span className="hidden md:block text-gray-500 text-xs">সারা বাংলাদেশে বিশ্বস্ত কর্মী নিয়োগ করুন।</span>
         </div>
 
@@ -62,9 +62,12 @@ function Header() {
         </div>
       </div>
 
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-20" onClick={() => setIsMenuOpen(false)}></div>
+      )}
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4">
+        <div className="fixed top-0 right-0 h-full bg-white w-64 shadow-lg p-4 z-30">
           <div className="relative mb-4">
             <input
               type="text"

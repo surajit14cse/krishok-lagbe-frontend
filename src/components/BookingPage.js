@@ -42,8 +42,8 @@ function BookingPage() {
       <div className="container mx-auto p-4">
         <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
           <div className="p-8">
-            <h1 className="text-3xl font-bold text-center mb-4">Place a Bid on {worker.name}</h1>
-            <h2 className="text-2xl font-bold text-center mb-8">Bidding Details</h2>
+            <h1 className="text-2xl md:text-3xl font-bold text-center mb-4">Place a Bid on {worker.name}</h1>
+            <h2 className="text-xl md:text-2xl font-bold text-center mb-8">Bidding Details</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="bidAmount" className="block text-gray-700 font-bold mb-2">Bid Amount (per day)</label>

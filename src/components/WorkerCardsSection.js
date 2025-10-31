@@ -16,9 +16,9 @@ function WorkerCardsSection({ workers }) {
       <section className="py-12 bg-green-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">আমাদের দক্ষ কর্মী</h2>
-          <div className="flex justify-start">
+          <div className="flex flex-col md:flex-row justify-start">
             {/* Left Side Category Panel */}
-            <div className="w-1/6 bg-white p-4 rounded-lg shadow-md mr-1">
+            <div className="hidden md:block w-full md:w-1/6 bg-white p-4 rounded-lg shadow-md mr-1">
               <h3 className="text-xl font-bold mb-4">Categories</h3>
               <ul>
                 <li className="mb-2">
@@ -40,7 +40,7 @@ function WorkerCardsSection({ workers }) {
             </div>
 
             {/* Right Side Worker Cards */}
-            <div className="w-3/4">
+            <div className="w-full md:w-5/6">
               <div className="flex flex-wrap justify-center">
                 {workers.map((worker) => (
                   <WorkerCard key={worker.id} worker={worker} />

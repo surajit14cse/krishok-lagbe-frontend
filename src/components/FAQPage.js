@@ -3,7 +3,7 @@ import React from 'react';
 function FAQPage() {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">Frequently Asked Questions</h1>
       <div className="space-y-4">
         <div>
           <h2 className="text-xl font-semibold">How do I hire a worker?</h2>

@@ -28,7 +28,7 @@ function TestimonialSection() {
   return (
     <div className="bg-green-50 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">What Our Users Say</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">What Our Users Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
