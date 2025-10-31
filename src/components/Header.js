@@ -26,7 +26,7 @@ function Header() {
           <div className="relative flex items-center w-full max-w-md">
             <input
               type="text"
-              placeholder="নাম বা কাজের ধরণ অনুসারে কৃষক অনুসন্ধান করুন..."
+              placeholder="নাম বা কাজের ধরণ অনুসারে কৃষক অনুসন্ধান করুন"
               className="w-full p-2 pl-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-800"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

@@ -23,6 +23,8 @@ import WorkerRegisterPage from './components/WorkerRegisterPage';
 import OwnerRegisterPage from './components/OwnerRegisterPage';
 import WorkerLoginPage from './components/WorkerLoginPage';
 import OwnerLoginPage from './components/OwnerLoginPage';
+import WorkerBidsPage from './components/WorkerBidsPage';
+import OwnerBidsPage from './components/OwnerBidsPage';
 
 
 
@@ -104,6 +106,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/worker/bids" element={<WorkerBidsPage />} />
+          <Route path="/owner/bids" element={<OwnerBidsPage />} />
         </Routes>
         <Footer />
       </div>

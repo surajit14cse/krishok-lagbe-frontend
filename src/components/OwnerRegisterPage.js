@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import BackgroundCarousel from './BackgroundCarousel';
+import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 
 function OwnerRegisterPage() {
   const [username, setUsername] = useState('');
@@ -23,54 +23,47 @@ function OwnerRegisterPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <BackgroundCarousel />
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md z-10">
-        <h2 className="text-2xl font-bold text-center mb-6">Register as an Owner</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Your Name"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="container mx-auto p-4">
+        <div className="flex flex-col lg:flex-row w-full lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+          <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style={{backgroundImage: `url('/FarmerImage/f1.png')`}}>
+            <h1 className="text-white text-3xl mb-3">Welcome</h1>
+            <div>
+              <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suspendisse.</p>
+            </div>
           </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+          <div className="w-full lg:w-1/2 py-16 px-12">
+            <h2 className="text-3xl mb-4">Register as an Owner</h2>
+            <p className="mb-4">
+              Create your account. It’s free and only takes a minute.
+            </p>
+            <form onSubmit={handleSubmit}>
+              <div className="mt-5 relative">
+                <FaUser className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" />
+                <input type="text" placeholder="Name" className="border border-gray-400 py-1 px-2 pl-10 w-full" value={username} onChange={(e) => setUsername(e.target.value)} />
+              </div>
+              <div className="mt-5 relative">
+                <FaEnvelope className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" />
+                <input type="email" placeholder="Email" className="border border-gray-400 py-1 px-2 pl-10 w-full" value={email} onChange={(e) => setEmail(e.target.value)} />
+              </div>
+              <div className="mt-5 relative">
+                <FaLock className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" />
+                <input type="password" placeholder="Password" className="border border-gray-400 py-1 px-2 pl-10 w-full" value={password} onChange={(e) => setPassword(e.target.value)} />
+              </div>
+              {error && <p className="text-red-500 text-xs italic mt-4">{error}</p>}
+              <div className="mt-5">
+                <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                  Register
+                </button>
+              </div>
+              <div className="mt-5 text-center">
+                <a href="/login" className="inline-block align-baseline font-bold text-sm text-blue-600 hover:text-blue-800">
+                  Already have an account? Login
+                </a>
+              </div>
+            </form>
           </div>
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="********"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          {error && <p className="text-red-500 text-xs italic mb-4">{error}</p>}
-          <div className="flex items-center justify-between">
-            <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-              Register
-            </button>
-            <a href="/login" className="inline-block align-baseline font-bold text-sm text-blue-600 hover:text-blue-800">
-              Already have an account? Login
-            </a>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   );
