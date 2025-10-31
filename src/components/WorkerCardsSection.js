@@ -64,6 +64,7 @@ function WorkerCardsSection({ workers }) {
                     <p className="text-gray-600">{worker.location}</p>
                     <p className="text-gray-600">{worker.occupation}</p>
                     <p className="text-gray-600">Rating: {worker.rating}</p>
+                    <p className="text-gray-600">Price: {worker.price}</p>
                   </div>
                 </div>
               </div>

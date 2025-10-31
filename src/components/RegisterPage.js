@@ -1,76 +1,25 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import BackgroundCarousel from './BackgroundCarousel';
 
 function RegisterPage() {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:5000/register', { username, email, password });
-      if (response.status === 201) {
-        navigate('/login');
-      }
-    } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed. Please try again.');
-    }
-  };
-
   return (
     <div className="flex items-center justify-center min-h-screen">
       <BackgroundCarousel />
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md z-10">
-        <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Your Name"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="********"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          {error && <p className="text-red-500 text-xs italic mb-4">{error}</p>}
-          <div className="flex items-center justify-between">
-            <button type="submit" className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-              Register
+      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md z-10 text-center">
+        <h2 className="text-2xl font-bold mb-6">Choose Your Role</h2>
+        <div className="flex justify-center gap-4">
+          <Link to="/register/worker">
+            <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Register as a Worker
             </button>
-            <a href="/login" className="inline-block align-baseline font-bold text-sm text-green-600 hover:text-green-800">
-              Already have an account? Login
-            </a>
-          </div>
-        </form>
+          </Link>
+          <Link to="/register/owner">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Register as an Owner
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -26,6 +26,7 @@ function WorkerProfilePage() {
               <span className="text-yellow-500">{'★'.repeat(Math.round(worker.rating))}</span>
               <span className="text-gray-600 ml-2">({worker.rating})</span>
             </div>
+            <p className="mt-2 text-xl text-gray-500">Price: {worker.price}</p>
             <p className="mt-6 text-gray-600">{worker.description}</p>
             <div className="mt-8">
               <Link to={`/booking/${worker.id}`}>

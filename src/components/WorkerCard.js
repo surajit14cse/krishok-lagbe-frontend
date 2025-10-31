@@ -14,6 +14,7 @@ function WorkerCard({ worker }) {
             <span className="text-yellow-500">{'★'.repeat(Math.round(worker.rating))}</span>
             <span className="text-gray-600 ml-2">({worker.rating})</span>
           </div>
+          <p className="text-gray-600">Price: {worker.price}</p>
         </div>
       </Link>
       <div className="p-4 bg-gray-50 text-center">
